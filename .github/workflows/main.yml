@@ -28,7 +28,7 @@ jobs:
       uses: docker/login-action@v2
       with:
         username: sandyzayn
-        password: dckr_pat_CVLfmHFaqjUZQDmhuLjikhBMrlE
+        password: dckr_pat_zXoqeJrVgVHZkOVq_VyOT53-8bA
 
     - name: Push Docker image
       run: docker push sandyzayn/nodejs-demo-app:latest
