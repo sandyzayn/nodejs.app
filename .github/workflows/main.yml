@@ -27,8 +27,8 @@ jobs:
     - name: Login to DockerHub
       uses: docker/login-action@v2
       with:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_TOKEN }}  # Use an access token, not plain password!
+        username: sandyzayn
+        password: dckr_pat_CVLfmHFaqjUZQDmhuLjikhBMrlE
 
     - name: Push Docker image
       run: docker push sandyzayn/nodejs-demo-app:latest
