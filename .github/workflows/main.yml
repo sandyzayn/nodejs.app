@@ -25,8 +25,8 @@ jobs:
       run: docker build -t sandyzayn/nodejs-demo-app:latest .
 
     - name: Login to DockerHub
-      run: |
-       echo "${{ secrets.DOCKER_HUB_TOKEN }}" | \
+      run: 
+       echo "${{ secrets.DOCKER_HUB_TOKEN }}"  
        docker login -u sandyzayn --password-stdin
 
     - name: Push Docker image
